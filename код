@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Богатырёва</title>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type">
+<script type="text/javascript">
+function priceCoffee() {
+var check;
+var k = document.getElementById('kolvo').value;
+var p = 55;
+var cs = 20;
+if (document.getElementById('check2').checked) {
+alert ("Цена: "+k*(p+cs));
+} else {
+alert ("Цена: "+k*p);
+}
+}
+</script>
+</head>
+<body>
+Кол-во чашек: <input type="number" id="kolvo"><br>
+Наличие сливок и сахара: <input type="checkbox" id="check2">
+<input type="button" value="Рассчитать" onclick="priceCoffee()"/><br>
+</body>
+</html>
